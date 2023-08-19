@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Fitness Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@900&display=swap" rel="stylesheet">
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap);
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('Backgroung Image.jpg');
+        }
+        .header{
+            background-color: black;
+            height: 70px;
+            margin: 0px;
+            top: 0;
+            padding: 10px;
+        }
+        /* .box{
+            border: 2px solid red; 
+        } */
+        #left{
+            display: inline-block;
+            position: absolute;
+            color: aliceblue;
+            left: 30px;
+            top: 0px;
+            width: 450px;
+            font-size: 45px;
+        }
+        #left p{
+            font-family: 'Overpass', sans-serif;
+            position: absolute;
+            margin: 22px;
+            top: 0px;
+            left: 140px;
+        }
+        #right{
+            display: inline-block;
+            position: absolute;
+            color: aliceblue;
+            width: 55%;
+            right: 207px;
+            top: 27px;
+        }
+        .nav li{
+            display: inline-block;
+            font-size: 21px;
+            font-family: "Teko",sans-serif;
+        }
+        .nav li a{
+            color: aliceblue;
+            text-decoration: none;
+            padding: 10px 50px;
+        }
+        .nav li a:hover, #home{
+            color: rgb(241, 166, 28);
+        }
+        .btn{
+            background-color: rgb(96, 95, 95);
+            color: white;
+            width: 170px;
+            height: 60px;
+            font-family: "Teko",sans-serif;
+            display: inline-block;
+            position: absolute;
+            right: 75px;
+            top: 25px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .btn:hover{
+            background-color: rgb(156, 154, 154);
+        }
+        button{
+            font-size: 25px;
+        }
+        .box img{
+            filter: invert(100%);
+            width: 120px;
+            height: 85px;
+        }
+        .orange{
+            color: orange;
+        }
+        .white{
+            color: aliceblue;
+        }
+        .heading{
+            font-family: 'Overpass', sans-serif;
+            font-size: 50px;
+            position: absolute;
+            top: 200px;
+            left: 150px;
+        }
+        .heading p{
+            line-height: 2px;
+        }
+        .container div{
+            margin: 15px auto;
+            text-align: center;
+            font-family: 'Overpass', sans-serif;
+            font-size: 40px;
+            color: #273088;
+        }
+        .container{
+            background-color: gray;
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            top: 380px;
+            left: 150px;
+            border-radius: 20px;
+        }
+        .Formhead{
+            font-family: 'Overpass', sans-serif;
+            text-align: center;
+        }
+        form p{
+            display: inline-block;
+            margin: 24px 0px;
+            padding-left: 10px;
+            font-size: 21px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        form input{
+            font-size: 15px;
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        form input:hover{
+            border-bottom: 2px solid black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        ::placeholder{
+            color: black;
+        }
+        #address{
+            width: 430px;
+        }
+        .submit{
+            background-color: black;
+            color: white;
+            width: 140px;
+            height: 40px;
+            font-family: 'Baloo Bhai 2', cursive;
+            border-radius: 8px;
+            display: block;
+            margin: 10px auto;
+            cursor: pointer;
+            border: none;
+        }
+        .submit:hover{
+            background-color: rgb(34, 34, 34);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="box" id="left">
+            <img src="Dumbell.jpg" alt="">
+            <p><span>FITN</span><span class="orange">ESS</span></p>
+        </div>
+        <div class="box" id="right">
+            <ul class="nav">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </div>
+        <button class="btn">Contact Us</button>
+    </header>
+    <div class="heading">
+        <p class="white">STEP UP YOUR</p>
+        <p class="orange">FITNESS CHALLENGE</p>
+        <p class="white">WITH US</p>
+    </div>
+    <div class="container">
+        <div class="Foramhead">Register now!</div>
+        <form action="project1.php">
+            <p>Name: <input type="text" name="Name" id="" placeholder="Name"></p>
+            <p>Mobile: +91 <input type="text" name="PhNo." id="" placeholder="Mobile Number"></p>
+            <p>Email: <input type="text" name="Email Id" id="" placeholder="xyz@gmail.com"></p>
+            <p>Gender: <input type="radio" name="age" id="Gender">Male 
+                <input type="radio" name="age" id="Gender">Female</p>
+            <p>Address: <input type="text" name="Address" id="address" placeholder="Home address"></p>
+            <input type="submit" value="Register" class="submit">
+        </form>
+    </div>
+</body>
+</html>
